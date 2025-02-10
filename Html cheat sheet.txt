@@ -1,0 +1,134 @@
+
+Html/CSS cheat sheet
+
+Länka css-filen till html
+
+ <link rel="stylesheet" href="Assets/CSS/mystyle.css"> 
+
+
+head = huvudet, information om filen eller webbplatsen som inte syns på hemsidan 
+body = allt innehåll på sidan
+ha alltid css i bakhuvudet när du kör html. till exempel fundera var bilder ska ligga och hur man delar upp sidan (grid)
+börja alltid med <html> sluta med </html>
+<body> för att starta </body> för att avsluta
+
+h1 är en förinställd standard (typ som rubrik 1 i word) finns även h2, ... , <h6 
+
+lägg till favicon i head efter title såhär 
+<link rel="icon" type="image" href="/images/bildens namn">
+
+Titeln som är i huvudet är titeln uppe på fliken. Andra titlar skrivs i body
+
+OBS! använd lite olika metoder för att visa att jag kan 
+till exempel använda både tabeller och DIVar.
+
+
+LISTOR
+<ul> 	Defines an unordered list
+<ol> 	Defines an ordered list
+<li> 	Defines a list item
+<dl> 	Defines a description list
+<dt> 	Defines a term in a description list
+<dd> 	Describes the term in a description list
+
+använder div om det inte finns en bättre rubrik
+
+Here are the block-level elements in HTML:
+<address> <article> <aside> <blockquote> <canvas> <dd> <div> <dl> <dt> <fieldset>
+<figcaption> <figure> <footer> <form> <h1>-<h6> <header> <hr> <li> <main> <nav>
+<noscript> <ol> <p> <pre> <section> <table> <tfoot> <ul> <video>
+
+Here are the inline elements in HTML:
+<a> <abbr> <acronym> <b> <bdo> <big> <br> <button> <cite> <code> <dfn> <em> <i>
+<img> <input> <kbd>' <label> <map> <object><output> <q> <samp> <script> <select>
+<small> <span> <strong> <sub> <sup> <textarea> <time> <tt> <var>
+
+If you have a <div> element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto.
+div använder <p> för element
+
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+</div>
+
+placering av div bredvid varandra 
+ <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+</style> 
+
+Använd klasser i <div> för att ändra utseende på allt inom klassen
+<div class = "klassens namn">
+stylea klassen genom 
+<style>
+.klassens namns {
+    CSS
+}
+</style>
+
+klasser och id fungerar på samma sätt. klass används på flera element, markeras med (.) i CSS
+id måste vara ett unikt element, markeras med (#) i CSS
+
+
+href används för länkar
+
+Irame är hemsidor inuti hemsidan
+
+
+
+olika sätt att navigera till bilder/filer
+
+<img src="picture.jpg"> 	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg"> 	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg"> 	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg"> 	The "picture.jpg" file is located in the folder one level up from the current folder
+
+
+LAYOUT
+    <header> - Defines a header for a document or a section
+    <nav> - Defines a set of navigation links
+    <section> - Defines a section in a document
+    <article> - Defines independent, self-contained content
+    <aside> - Defines content aside from the content (like a sidebar)
+    <footer> - Defines a footer for a document or a section
+    <details> - Defines additional details that the user can open and close on demand
+    <summary> - Defines a heading for the <details> element
+
+
+
+CSS TEST
+
+<style>
+    h3{
+        text-align: center;
+    }
+    table {
+        grid-area: table;
+      table-layout: fixed;
+      text-align: center;
+    }
+    th {
+        text-align: center;
+    }
+    td {
+      vertical-align: middle;  
+      height: 150px;
+      width: 300px;
+      border: 1px solid black;
+      border-radius: 7px;
+      
+    }
+
+    .center {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        grid-area: 
+        "..."
+        ".table."
+        "...";
+    }
+    </style>

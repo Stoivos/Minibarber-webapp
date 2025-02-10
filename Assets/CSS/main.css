@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+p {
+    font-family: 'brödtext';
+}
+
+/* ----------- TYPSNITT ------------*/
+@font-face {
+    font-family: 'rubrik';
+    src: url('/Assets/Fonts/glimmer\ of\ light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brödtext';
+    src: url('/Assets/Fonts/TT\ Chocolates\ Trial\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ----------- STARTSIDA ------------*/
+
+@media (max-width: 600px) {
+    nav {
+        grid-template-areas:
+        ". l r ."
+        ". k k .";
+        grid-template-rows: 1fr 1fr;
+    }
+} 
+
+nav {
+    z-index: 100;
+    display: grid;
+    grid-template-areas:
+        ". l r k .";
+    grid-template-columns: 15% 15% 40% 20% 10%;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #090909, #1E1E1E);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%); 
+}
+
+/* för java script och ha en nav som följer med
+i nav {
+position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out;
+    z-index: 1000;
+} 
+
+nav.scrolled {
+    opacity: 0.3; 
+    backdrop-filter: blur(5px);
+}
+
+nav:hover {
+    opacity: 1;
+}
+*/
+nav h1 {
+    color: white;
+    font-family: 'rubrik';
+    font-size: 5cap;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+    text-shadow: 5px 5px 5px #090909;
+    grid-area: r;
+}
+
+nav p {
+    color: white;
+}
+
+nav img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 8px #090909;
+    grid-area: l;
+
+}
+
+.boka_nu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 28px;
+    background-image: url("/Assets/Images/guldfärg.png");
+    background-size: cover;
+    box-shadow: 3px 3px 10px #090909,
+        inset -3px -3px 10px rgba(45, 35, 14, 0.5);
+    text-shadow: 1px 1px 2px #090909;
+    grid-area: k;
+    transition: 0.4s ease, 0.4s ease;
+    filter: brightness(1.1);
+}
+
+.boka_nu:hover {
+    filter: brightness(0.9);
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    body {
+        background-color: blue;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    header {
+    grid-template-areas:
+        ". a ."
+        ". a ."
+        ". c ."
+        ". d .";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 100%;
+    background-image: url("/Assets/Images/logga.png");
+    }
+}
+
+header {
+    margin-top: 130px;
+    display: grid;
+    grid-template-areas:
+        ". a ."
+        ". a ."
+        "b c d";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    background-image: url("/Assets/Images/barbershop.png");
+    height: 639px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+}
+
+#header_text {
+    color: white;
+    grid-area: a;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 2.8cap;
+    font-family: 'brödtext';
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 8px #090909;
+}
+
+#välkommen {
+    font-size: 2.8cap;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+#button_behandlingar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgba(208, 200, 197, 0.9);
+    width: 100%;
+    height: 80px;
+    border-radius: 60px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    grid-area: c;
+    transition: 0.4s ease, 0.4s ease;
+}
+
+#button_behandlingar:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+#button_om_oss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgba(208, 200, 197, 0.7);
+    width: 70%;
+    height: 60px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    grid-area: b;
+    transition: 0.4s ease, 0.4s ease;
+}
+
+#button_om_oss:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+#button_galleri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgba(208, 200, 197, 0.7);
+    width: 70%;
+    height: 60px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    grid-area: d;
+    transition: 0.4s ease, 0.4s ease;
+}
+
+#button_galleri:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+#text_knapp_behandlingar {
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: black;
+}
+
+header p {
+    font-size: 1.5em;
+    color: black;
+}
+
+/* ----------- BEHANDLINGAR ------------*/
+
+section {
+    width: 100%;
+    height: 769px;
+}
+
+section h2 {
+    padding-top: 60px;
+    font-size: 3.8cap;
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+}
+
+#behandlingar_grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        ". . . . ."
+        ". a b c ."
+        ". d e f ."
+        ". . . . .";
+    grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+    grid-template-rows: 0.2fr repeat(2, 1fr) 0.5fr;
+    gap: 30px 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.ruta {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 4cap;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5),
+        inset -5px -5px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Gemensamma ikoner */
+.pris {
+    font-size: 1.2cap;
+    font-weight: 400;
+}
+
+.text_behandling {
+    font-size: 2.5cap;
+    font-weight: 550;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0.3px rgb(230, 230, 230);
+}
+
+.ikon_sax {
+    height: 80px;
+    width: 80px;
+    transform: rotate(45deg);
+}
+
+.ikon_skägg {
+    height: 70px;
+    width: 70px;
+}
+
+.dubbla_ikoner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* id:n */
+#klippning {
+    grid-area: a;
+}
+
+#klippning_skägg {
+    grid-area: b;
+}
+
+#skäggtrim {
+    grid-area: c;
+}
+
+#ikon_trimmer {
+    height: 80px;
+    width: 80px;
+    transform: rotate(90deg);
+}
+
+#barnklippning {
+    grid-area: d;
+}
+
+#ikon_barn {
+    height: 90px;
+    width: 90px;
+}
+
+#seniorklippning {
+    grid-area: e;
+}
+
+#ikon_senior {
+    height: 80px;
+    width: 80px;
+}
+
+#soon {
+    grid-area: f;
+}
+
+#ikon_soon {
+    width: 120px;
+    height: auto;
+}
+
+#soon p {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* ----------- GALLERI ------------*/
+
+#sida_galleri {
+    height: 1100px;
+}
+
+#layout_övre {
+    display: grid;
+    grid-template-areas:
+        "a b c"
+        "a d c";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 30px;
+    height: 50%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#layout_undre {
+    display: grid;
+    grid-template-areas:
+        "e f g";
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    height: 30%;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#layout_övre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#layout_undre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#bild_1 {
+    grid-area: a;
+}
+
+#bild_2 {
+    grid-area: b;
+}
+
+#bild_3 {
+    grid-area: c;
+}
+
+#bild_4 {
+    grid-area: d;
+}
+
+#bild_5 {
+    grid-area: e;
+}
+
+#bild_6 {
+    grid-area: f;
+}
+
+#bild_7 {
+    grid-area: g;
+}
+
+/* ----------- OM OSS ------------*/
+
+#sida_om_oss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bakgrundsruta {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    height: 500px;
+    width: 1100px;
+    border-radius: 28px;
+    margin-top: 60px;
+    padding-left: 40px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#bild_barberare {
+    width: 550px;
+    height: 415px;
+    border-radius: 28px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#rubrik_beskrivning {
+    font-size: 3cap;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+#bakgrundsruta p {
+    line-height: 27px;
+    margin: 30px;
+}
+
+/* ----------- VIDEO OCH LJUD ------------*/
+
+/* #layout_video {
+    padding-top: 50px;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        ". a ."
+        ". b .";
+    grid-template-columns: 0.4fr 1fr 0.4fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px 30px;
+    justify-items: center;
+    align-items: center;
+
+} */
+
+table {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 200px 0;
+    margin-top: 50px;
+}
+#ljud_container {
+    padding-top: 320px;
+}
+td {
+    color: white;
+    font-family: "brödtext";
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    padding-top: 20px;
+}
+
+/* .media_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+} */
+
+/* #video_container {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-area: a;
+
+} */
+
+/* #ljud_container {
+    padding-top: 20px;
+    grid-area: b;
+} */
+
+/* .text_ljud_bild {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+} */
+
+
+/* ----------- FOOTER ------------*/
+
+#footer {
+    background-color: #1E1B1B;
+    height: 420px;
+    width: 100%;
+}
+
+#layout_footer {
+    width: 100%;
+    height: 420px;
+    display: grid;
+    grid-template-areas:
+        "a b k c l d .";
+    grid-template-columns: 0.5fr 1fr 0.1fr 1fr 0.1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sektion {
+    margin-top: 40px;
+}
+
+#logo_footer {
+    margin-left: 100px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 8px #090909;
+    grid-area: a;
+}
+
+#kontakt_text {
+    font-family: "brödtext";
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    font-size: 1.8cap;
+    grid-area: b;
+}
+
+#mail {
+    color: white;
+}
+
+#kontakt_rubrik {
+    font-size: 2.1cap;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#social_media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    grid-area: b;
+}
+
+#instagram {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-image: url(/Assets/Images/ikoner/ig.png);
+    background-size: contain;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#facebook {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(/Assets/Images/ikoner/fb.png);
+    background-size: contain;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#tiktok {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-image: url(/Assets/Images/ikoner/tt.png);
+    background-size: contain;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+#linje1 {
+    align-self: center;
+    justify-self: end;
+    background-color: white;
+    height: 300px;
+    width: 1px;
+    margin-top: 30px;
+    grid-area: k;
+}
+
+#linje2 {
+    align-self: center;
+    justify-self: start;
+    background-color: white;
+    height: 300px;
+    width: 1px;
+    margin-top: 30px;
+    grid-area: l;
+}
+
+#öppettider_rubrik {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2.6cap;
+    font-weight: 700;
+    grid-area: c;
+}
+
+#lista_öppettider {
+    text-align: center;
+    list-style: none;
+    font-family: "brödtext";
+    font-size: 1.7cap;
+    color: white;
+    line-height: 30px;
+    margin-right: 40px;
+    margin-top: 20px;
+    grid-area: c;
+}
+
+.dag {
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+#hitta_hit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: d;
+}
+
+#hitta_hit_rubrik {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2.3cap;
+    font-weight: 700;
+    grid-area: d;
+}
+
+#adress {
+    margin-top: 20px;
+    color: white;
+}
+
+.vägvisning {
+    background-image: url(/Assets/Images/vägvisning.png);
+    background-size: contain;
+    width: 240px;
+    height: 240px;
+    border-radius: 28px;
+    margin-top: 20px;
+    grid-area: d;
+}
+
+#adress_ikon {
+    display: flex;
+    gap: 10px;
+}
+
+#ikon_pin {
+    margin-top: 10px;
+    height: 30px;
+    width: auto;
+}
+
+#adress {
+    font-family: "brödtext";
+    font-size: 1.7cap;
+}
+
+#copyright {
+    font-size: 1cap;
+    color: white;
+    text-align: center;
+    margin-top: 85px;
+}

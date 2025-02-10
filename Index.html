@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta name="viewport" content="width=600px, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Bokningssida för barberare minibarber som finns i centrala Piteå">
+    <meta name="author" content="Theo Wikström">
+    <title> Mini Barber</title>
+    <link rel="icon" type="image" href="/Assets/Images/logga rund.png">
+    <link rel="stylesheet" href="Assets/CSS/main.css">
+</head>
+
+<body>
+
+    <nav>
+        <img src="Assets/Images/logga.png">
+        <h1>mini Barber</h1>
+        <a href="https://boka.timma.se/reservation/minibarber" class="boka_nu">
+            <p>BOKA NU</p>
+        </a>
+    </nav>
+
+    <header>
+        <p id="header_text"><span id="välkommen">Välkommen</span><br>till din mini barber<br>i Piteå</p>
+
+        <a href="#sida_behandlingar" id="button_behandlingar">
+            <p id="text_knapp_behandlingar">BEHANDLINGAR</p>
+        </a>
+        <a href="#sida_galleri" id="button_galleri">
+            <p>GALLERI</p>
+        </a>
+        <a href="#sida_om_oss" id="button_om_oss">
+            <p>OM OSS</p>
+        </a>
+    </header>
+
+    <section id="sida_behandlingar">
+        <h2>BEHANDLINGAR</h2>
+        <div id="behandlingar_grid">
+            <div class="ruta" id="klippning">
+                <img class="ikon_sax" src="/Assets/Images/ikoner/sax.png" alt="Ikon för sax">
+                <p class="text_behandling">Herrklippning<br><span class="pris"> 400kr</span></p>
+            </div>
+            <div class="ruta" id="klippning_skägg">
+                <div class="dubbla_ikoner"> <img class="ikon_sax" src="/Assets/Images/ikoner/sax.png"
+                        alt="Ikon för sax">
+                    <img class="ikon_skägg" src="/Assets/Images/ikoner/skägg.png" alt="Ikon för skägg">
+                </div>
+                <p class="text_behandling">Klippning + skägg<br><span class="pris">600kr</span></p>
+            </div>
+            <div class="ruta" id="skäggtrim">
+                <div class="dubbla_ikoner"> <img id="ikon_trimmer" src="/Assets/Images/ikoner/trimmer.png"
+                        alt="Ikon för trimmer">
+                    <img class="ikon_skägg" src="/Assets/Images/ikoner/skägg.png" alt="Ikon för skägg">
+                </div>
+                <p class="text_behandling">Skäggtrim<br><span class="pris">300kr</span></p>
+            </div>
+            <div class="ruta" id="barnklippning">
+                <div class="dubbla_ikoner"> <img class="ikon_sax" src="/Assets/Images/ikoner/sax.png"
+                        alt="Ikon för sax">
+                    <img id="ikon_barn" src="/Assets/Images/ikoner/barn.png" alt="Ikon för barn">
+                </div>
+                <p class="text_behandling">Barnklippning<br><span class="pris">300kr</span></p>
+            </div>
+            <div class="ruta" id="seniorklippning">
+                <div class="dubbla_ikoner"> <img class="ikon_sax" src="/Assets/Images/ikoner/sax.png"
+                        alt="Ikon för sax">
+                    <img id="ikon_senior" src="/Assets/Images/ikoner/senior.png" alt="Ikon för pensionär">
+                </div>
+                <p class="text_behandling">Seniorklippning<br><span class="pris">300kr</span></p>
+            </div>
+            <div class="ruta" id="soon">
+                <img id="ikon_soon" src="/Assets/Images/ikoner/coming.png" alt="Ikon för (kommer snart)">
+                <p>. . .</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sida_galleri">
+        <h2>GALLERI</h2>
+        <div id="layout_övre">
+            <img id="bild_1" src="/Assets/Images/stock/stock (1).jpg" alt="Bild på resultat">
+            <img id="bild_2" src="/Assets/Images/stock/stock (2).jpg" alt="Bild på resultat">
+            <img id="bild_3" src="/Assets/Images/stock/stock (3).jpg" alt="Bild på resultat">
+            <img id="bild_4" src="/Assets/Images/stock/stock (4).jpg" alt="Bild på resultat">
+        </div>
+        <div id="layout_undre">
+            <img id="bild_5" src="/Assets/Images/stock/stock (5).jpg" alt="Bild på resultat">
+            <img id="bild_6" src="/Assets/Images/stock/stock (6).jpg" alt="Bild på resultat">
+            <img id="bild_7" src="/Assets/Images/stock/stock (7).jpg" alt="Bild på resultat">
+        </div>
+    </section>
+
+    <section id="sida_om_oss">
+        <h2>OM OSS</h2>
+        <div id="bakgrundsruta">
+            <img id="bild_barberare" src="/Assets/Images/barber.jpg" alt="bild på frisören"></img>
+            <p><span id="rubrik_beskrivning">Lorem Ipsum</span><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at fermentum orci.
+                Sed vestibulum nec augue et scelerisque. Etiam sed nibh sit amet ligula tempor imperdiet.
+                Proin eu scelerisque velit. Quisque vehicula tincidunt ultrices. Etiam sit amet viverra odio.
+                Aenean eu enim consectetur, facilisis ligula et, porta nunc. Vivamus pulvinar a tellus ut tincidunt.
+                Sed fringilla, diam sed condimentum fermentum, enim leo vehicula mi, nec sodales risus enim vitae erat.
+                Quisque tristique urna nec elit dictum aliquam. Donec dui nulla, scelerisque nec risus nec, gravida
+                sollicitudin
+                lectus. Sed rhoncus varius orci ac blandit. Nam et leo a mi cursus venenatis. Aenean fermentum feugiat
+                arcu, sit
+                amet congue ex ullamcorper at. Donec at mi a sapien gravida dignissim.</p>
+        </div>
+    </section>
+
+    <section id="sida_video_ljud">
+        <h2>VIDEO OCH LJUD<br>(EXTRA)</h2>
+        <table>
+            <tr>
+                <th>
+                    <div id="video_container">
+                        <video controls>
+                            <source src="/Assets/video/video barber.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </th>
+                <th>
+                    <div id="ljud_container">
+                        <audio controls>
+                            <source src="/Assets/Audio/audio barber.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </th>
+            <tr>
+                <td class="text_ljud_bild">Barber video </td>
+                <td class="text_ljud_bild">Barber ljud</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer id="footer">
+        <div id="layout_footer">
+            <div id="linje1"></div>
+            <div id="linje2"></div>
+            <div class="sektion"><img id="logo_footer" src="Assets/Images/logga.png"></div>
+            <div class="sektion">
+                <p id="kontakt_text"><span id="kontakt_rubrik">Kontakt</span><br><a id="mail"
+                        href="mailto:exempel@mail.com">exempel@mail.com</a>
+                    <br>070-123 45 67
+                </p>
+                <div id="social_media">
+                    <a id="instagram" href="https://www.instagram.com/mini_barber97/?igsh=MzJubTU2aWMzbWhx"></a>
+                    <a id="facebook" href="https://www.facebook.com/people/Mini-barber/61553260184497/"></a>
+                    <a id="tiktok" href="https://www.tiktok.com/@mini.barber3?_t=8ni4NDSLn0a&_r=1"></a>
+                </div>
+            </div>
+            <div class="sektion" id="sektion_öppettider">
+                <p id="öppettider_rubrik">Öppettider</p>
+                <ul id="lista_öppettider">
+                    <li><span class="dag">Mån</span> 00.00 - 24.00</li>
+                    <li><span class="dag">Tis</span> 00.00 - 24.00</li>
+                    <li><span class="dag">Ons</span> 00.00 - 24.00</li>
+                    <li><span class="dag">Tor</span> 00.00 - 24.00</li>
+                    <li><span class="dag">Fre</span> 00.00 - 24.00</li>
+                    <li><span class="dag">Lör</span> 00.00 - 24.00</li>
+                    <li><span class="dag">Sön</span> 00.00 - 24.00</li>
+                </ul>
+                <p id="copyright">All rights reserved. Copyright 2024.</p>
+            </div>
+            <div class="sektion">
+                <div id="hitta_hit">
+                    <p id="hitta_hit_rubrik">Hitta hit</p>
+                    <a class="vägvisning"
+                        href="https://www.google.com/maps/place/Pr%C3%A4stg%C3%A5rdsgatan+48,+941+32+Pite%C3%A5/@65.319198,21.4735283,17z/data=!3m1!4b1!4m6!3m5!1s0x467f17a67a9f356b:0x257bd2447cba3819!8m2!3d65.319198!4d21.4761032!16s%2Fg%2F11y2g_gttn?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D"></a>
+                    <div id="adress_ikon">
+                        <img id="ikon_pin" src="/Assets/Images/ikoner/pin.png" alt="bild för google pin">
+                        <a id="adress"
+                            href="https://www.google.com/maps/place/Pr%C3%A4stg%C3%A5rdsgatan+48,+941+32+Pite%C3%A5/@65.3190927,21.468995,15.56z/data=!4m6!3m5!1s0x467f17a67a9f356b:0x257bd2447cba3819!8m2!3d65.319198!4d21.4761032!16s%2Fg%2F11y2g_gttn?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D">
+                            Exempeladress 99, stad, land</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
