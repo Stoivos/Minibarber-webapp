@@ -28,16 +28,6 @@ p {
 
 
 /* ----------- STARTSIDA ------------*/
-
-@media (max-width: 600px) {
-    nav {
-        grid-template-areas:
-        ". l r ."
-        ". k k .";
-        grid-template-rows: 1fr 1fr;
-    }
-} 
-
 nav {
     z-index: 100;
     display: grid;
@@ -119,25 +109,6 @@ nav img {
 .boka_nu:hover {
     filter: brightness(0.9);
     transform: scale(1.05);
-}
-@media (max-width: 600px) {
-    body {
-        background-color: blue;
-    }
-} 
-
-@media only screen and (max-width: 600px) {
-    header {
-    grid-template-areas:
-        ". a ."
-        ". a ."
-        ". c ."
-        ". d .";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    height: 100%;
-    background-image: url("/Assets/Images/logga.png");
-    }
 }
 
 header {
@@ -511,25 +482,40 @@ section h2 {
 
 } */
 
+#sida_video_ljud {
+    width: 100vw;
+}
+
 table {
-    width: 100%;
-    height: auto;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+    height: auto;
     text-align: center;
     border-collapse: separate;
-    border-spacing: 200px 0;
     margin-top: 50px;
 }
 #ljud_container {
     padding-top: 320px;
+    width: 100%;
 }
-td {
+table tr {
+    display: flex;
+    width: 100vw;
+}
+td,th {
+    display: inline-block;
+    width: 50%;
     color: white;
     font-family: "brödtext";
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     padding-top: 20px;
+}
+
+#video_container {
+    width: 100%;
 }
 
 /* .media_container {
