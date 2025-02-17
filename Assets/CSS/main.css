@@ -25,6 +25,10 @@ p {
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* ----------- UTSKRIFT ------------*/
 
@@ -32,10 +36,6 @@ p {
     * {
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
-    }
-
-    body {
-        background-color: #1E1E1E;
     }
 
     nav {
