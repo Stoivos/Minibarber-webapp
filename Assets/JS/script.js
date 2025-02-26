@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 hideElements[i].style.display = "none";
             }
         }
-
         if (hideElements[0].style.display === "none") {
             toggleButton.textContent = "Visa meny";
             nav.style.height = toggleButton.offsetHeight + 20 + "px"; 
@@ -146,27 +145,3 @@ $(document).ready(function() {
     });
 });
 
-
-
-// EXTRA TEST
-document.addEventListener("DOMContentLoaded", function() {
-    let button = document.getElementById("button_om_oss");
-    let clickCount = 0;
-
-    button.addEventListener("click", function() {
-        clickCount++;
-
-        if(clickCount == 1) {
-            this.style.backgroundColor = "red";
-        }
-
-        else if (clickCount == 2) {
-            this.style.backgroundColor = "blue";
-        }
-
-        else {
-            this.style.backgroundColor = "";
-            clickCount = 0;
-        }  
-    });
-});
