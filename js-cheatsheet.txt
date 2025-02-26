@@ -1,0 +1,29 @@
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+exempel för att få textstorleken att ökas. dock skrivet i htmlen.
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+
+
+extern fil (som jag ska ha)
+
+var 	Declares a variable
+let 	Declares a block variable
+const 	Declares a block constant
+if 	Marks a block of statements to be executed on a condition
+switch 	Marks a block of statements to be executed in different cases
+for 	Marks a block of statements to be executed in a loop
+function 	Declares a function
+return 	Exits a function
+try 	Implements error handling to a block of statements
+
+JavaScript has 8 Datatypes
+String
+Number
+Bigint
+Boolean
+Undefined
+Null
+Symbol
+Object 

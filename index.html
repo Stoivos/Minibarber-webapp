@@ -8,16 +8,29 @@
     <title> Mini Barber</title>
     <link rel="icon" type="image/png" href="/Assets/Images/logga_rund.png">
     <link rel="stylesheet" href="Assets/CSS/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 
+
+    <button id="pil_upp">
+        <img src="/Assets/Images/ikoner/arrowup.png" alt="Pil för att återgå till startsidan">
+    </button>
+
     <nav>
-        <img src="Assets/Images/logga.png" alt="logotyp">
-        <a href="/index.html">
+        <button id="toggle_meny">Dölj meny</button>
+
+        <button class="hide toggle_läge">
+            <img id="sun_ikon" src="/Assets/Images/ikoner/sun.png" alt="Ikon för ljust läge">
+        </button>
+
+        <img class="hide" src="Assets/Images/logga.png" alt="logotyp">
+        <a class="hide" href="/index.html">
             <h1>mini Barber</h1>
         </a>
-        <a href="https://boka.timma.se/reservation/minibarber" class="boka_nu">
+
+        <a class="hide boka_nu" href="https://boka.timma.se/reservation/minibarber">
             <p>BOKA NU</p>
         </a>
     </nav>
@@ -76,11 +89,14 @@
             </div>
         </div>
     </section>
-
+    
     <section id="sida_galleri">
         <h2>GALLERI</h2>
         <div id="layout_övre">
-            <img id="bild_1" src="/Assets/Images/stock/stock1.jpg" alt="Bild på resultat">
+            <div id="bild_1">
+                <img id="byta_bild" src="/Assets/Images/stock/stock1.jpg" alt="Bild på resultat">
+                <p class="figurtext">Herrklippning: Mittbena</p>
+            </div>
             <img id="bild_2" src="/Assets/Images/stock/stock2.jpg" alt="Bild på resultat">
             <img id="bild_3" src="/Assets/Images/stock/stock3.jpg" alt="Bild på resultat">
             <img id="bild_4" src="/Assets/Images/stock/stock4.jpg" alt="Bild på resultat">
@@ -112,6 +128,11 @@
 
     <section id="sida_video_ljud">
         <h2>VIDEO OCH LJUD<br>(EXTRA)</h2>
+        <div id="placering_knapp">
+            <button id="test_knapp">Show Message</button>
+            <button id="förstora_text">Öka textstorlek</button>
+        </div>
+
         <table>
             <tr>
                 <th>
@@ -179,6 +200,7 @@
             </div>
         </div>
     </footer>
+    <script src="Assets/JS/script.js"></script>
 </body>
 
 </html>
