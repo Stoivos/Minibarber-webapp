@@ -19,7 +19,7 @@ let images = [
 let imgIndex = 0;
 let animation;  
 
-function changeImage() {
+function bytaBild() {
     imgIndex = (imgIndex + 1) % 3;
     bild1.src = images[imgIndex]; 
 }
@@ -32,8 +32,8 @@ function startAnimation() {
     img_text.classList.add("fadeInOut");
 
     setTimeout(() => {
-        changeImage();
-        animation = setInterval(changeImage, 1500);
+        bytaBild();
+        animation = setInterval(bytaBild, 1500);
     }, 800);
 }
 
