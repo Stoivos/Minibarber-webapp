@@ -29,7 +29,6 @@ function startAnimation() {
 
     let img_text = document.querySelector(".figurtext"); 
     img_text.style.opacity = 1;
-    img_text.classList.add("fadeInOut");
 
     setTimeout(() => {
         bytaBild();

@@ -576,19 +576,6 @@ section h2 {
 
 }
 
-.fadeInOut {
-    animation: fadeInOutAnimation infinite ease-in-out infinite;
-}
-
-@keyframes fadeInOutAnimation {
-    0% {
-        opacity: 1; 
-    }
-    100% {
-        opacity: 1;  
-    }
-}
-
 
 /* ----------- OM OSS ------------*/
 
