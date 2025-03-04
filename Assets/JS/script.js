@@ -43,7 +43,6 @@ function stopAnimation() {
 
     let img_text = document.querySelector(".figurtext"); 
     img_text.style.opacity = 0;
-    img_text.classList.remove("fadeInOut");
 
     bild1.src = images[0];  
 }
